@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="import" href="component.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Calculator</h1>
+    <!-- start working on form with js -->
+    <form id="call" method="GET">
+        <input type="text" id="display">
+        <p></p>
+        <div class="last">
+            <input type="button" value="=" onclick="call.display.value = eval(call.display.value)">
+            <input type="button" value="DEL" onclick="call.display.value = ''">    
+        </div>
+        <button type="button" value="1" onclick="call.display.value += 1" >1</button>
+        <button type="button" value="2" onclick="call.display.value += 2">2</button>
+        <button type="button" value="3" onclick="call.display.value += 3">3</button>
+        <button type="button" value="+" onclick="call.display.value += '+'">+</button>
+        <p></p>
+        <button type="button" value="4" onclick="call.display.value += 4">4</button>
+        <button type="button" value="5" onclick="call.display.value += 5">5</button>
+        <button type="button" value="6" onclick="call.display.value += 6">6</button>
+        <button type="button" value="-" onclick="call.display.value += '-'">-</button>
+        <p></p>
+        <button type="button" value="7" onclick="call.display.value += 7">7</button>
+        <button type="button" value="8" onclick="call.display.value += 8">8</button>
+        <button type="button" value="9" onclick="call.display.value += 9">9</button>
+        <button type="button" value="x" onclick="call.display.value += '*'">x</button>
+        <p></p>
+        <button type="button" value="." onclick="call.display.value += '.'">.</button>
+        <button type="button" value="0" onclick="call.display.value += 0">0</button>
+        <button type="button" value="/" onclick="call.display.value += '/'">/</button>
+        <button type="button" value="%" onclick="call.display.value += '%'">%</button>
+        <p></p>
+    </form>
+    
+</body>
+</html>
